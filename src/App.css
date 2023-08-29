@@ -1,12 +1,17 @@
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .container {
   font-family: sans-serif;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
   align-items: center;
-  width: 80%;
-  min-height: 100vh;
-  background-color: #f0f0f0;
 }
 
 .form {
@@ -17,10 +22,12 @@
 }
 
 .input {
-  width: 200px;
+  width: 180px;
+  height: 40px;
   padding: 10px;
   border: 1px solid #ccc;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .error {
@@ -31,4 +38,18 @@
 .rgb {
   margin-top: 10px;
   font-size: 18px;
+}
+
+.message-container {
+  width: 180px;
+  min-height: 60px;
+  position: absolute;
+  bottom: -75px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.error-border {
+  border-color: red;
 }
